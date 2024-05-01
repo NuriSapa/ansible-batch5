@@ -1,0 +1,6 @@
+- hosts: localhost       #157.245.115.155
+  tasks: 
+  - name: install packages
+    yum:
+      name: httpd
+      state: latest

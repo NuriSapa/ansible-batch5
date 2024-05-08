@@ -1,0 +1,10 @@
+- hosts: all
+  tasks: 
+  - name: Creat groups
+    group:
+      name: "{{ item }}"
+    loop: 
+      - devops
+      - dev
+      - aiml
+

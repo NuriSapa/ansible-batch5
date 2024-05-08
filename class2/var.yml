@@ -1,0 +1,10 @@
+- hosts: all
+  vars: 
+    name1: kaizen
+    team: DevOps
+  tasks:
+  - debug: msg="Hello {{ name1 }}, I'm {{ team }}"
+
+
+  #ansible-playbook -i hosts var.yml --extra-vars=name1=Nuriza --extra-vars=team=qa
+  #ansible-playbook -i hosts var.yml -e "name1=nuriza team=qa"

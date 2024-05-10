@@ -1,0 +1,10 @@
+- name: install packages
+  apt:
+    name: Apache2
+    state: latest
+    update_cache: yes
+
+- name: Start apache
+  service:
+    name: Apache2
+    state: started
